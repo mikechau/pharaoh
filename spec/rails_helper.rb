@@ -1,14 +1,17 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 ENV['RAILS_ENV'] ||= 'test'
-require 'spec_helper'
-require File.expand_path('../../config/environment', __FILE__)
-require 'rspec/rails'
-require 'pundit/rspec'
-# require 'rspec/autorun'
 
-# Requires supporting ruby files with custom matchers and macros, etc,
-# in spec/support/ and its subdirectories.
-Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
+if ENV['CI_SERVER'] == 'true'
+  require "codeclimate-test-reporter"
+  CodeClimate::TestReporter.configure do |config|
+    config.logger.level = Logger::WARN
+  end
+
+  CodeClimate::TestReporter.start
+
+  require 'coveralls'
+  Coveralls.wear!('rails')
+end
 
 if ENV['SIMPLECOV'] == 'true'
   require 'simplecov'
@@ -19,8 +22,23 @@ if ENV['SIMPLECOV'] == 'true'
     SimpleCov::Formatter::HTMLFormatter,
     SimpleCov::Formatter::MetricFu
   ]
-  SimpleCov.start
+
+  SimpleCov.start 'rails' do
+    add_filter 'vendor'
+    add_filter 'spec'
+    add_filter 'node_modules'
+  end
 end
+
+require 'spec_helper'
+require File.expand_path('../../config/environment', __FILE__)
+require 'rspec/rails'
+require 'pundit/rspec'
+# require 'rspec/autorun'
+
+# Requires supporting ruby files with custom matchers and macros, etc,
+# in spec/support/ and its subdirectories.
+Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 
 # Checks for pending migrations before tests are run.
 # If you are not using ActiveRecord, you can remove this line.

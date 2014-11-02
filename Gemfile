@@ -112,6 +112,7 @@ group :test, :development do
   # Code assessments
   gem 'simplecov', require: nil
   gem 'metric_fu', require: nil
+  gem 'coveralls', require: false
 end
 
 group :development do
