@@ -1,6 +1,6 @@
 # PHARAOH
 
-[ ![Codeship Status for mikechau/pharaoh](https://codeship.io/projects/919a6a40-44b9-0132-1b8a-32378b856677/status)](https://codeship.io/projects/44859)
+[ ![Codeship Status for mikechau/pharaoh](https://codeship.io/projects/919a6a40-44b9-0132-1b8a-32378b856677/status)](https://codeship.io/projects/44859) [![Code Climate](https://codeclimate.com/github/mikechau/pharaoh/badges/gpa.svg)](https://codeclimate.com/github/mikechau/pharaoh)
 
 ## Getting Started
 ### Set up
