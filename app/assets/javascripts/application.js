@@ -18,3 +18,4 @@
 //= require nprogress-turbolinks
 //= require nprogress-ajax
 //= require bootstrap-sprockets
+//= require rails-bundle

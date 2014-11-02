@@ -110,7 +110,7 @@ Disallow: /*.xml
 Disallow: /*.rss
 Disallow: /*.i
 Disallow: /*.embed
-Disallow: /wa/
+Disallow: /p/
 Disallow: /api/
 Disallow: /rpm/
 Disallow: /users/
@@ -126,7 +126,7 @@ Disallow: /*.xml
 Disallow: /*.rss
 Disallow: /*.i
 Disallow: /*.embed
-Disallow: /wa/
+Disallow: /p/
 Disallow: /api/
 Disallow: /rpm/
 Disallow: /users/
@@ -142,7 +142,7 @@ Disallow: /*.xml
 Disallow: /*.rss
 Disallow: /*.i
 Disallow: /*.embed
-Disallow: /wa/
+Disallow: /p/
 Disallow: /api/
 Disallow: /rpm/
 Disallow: /users/
@@ -158,7 +158,7 @@ Disallow: /*.xml
 Disallow: /*.rss
 Disallow: /*.i
 Disallow: /*.embed
-Disallow: /wa/
+Disallow: /p/
 Disallow: /api/
 Disallow: /rpm/
 Disallow: /users/
@@ -174,7 +174,7 @@ Disallow: /*.xml
 Disallow: /*.rss
 Disallow: /*.i
 Disallow: /*.embed
-Disallow: /wa/
+Disallow: /p/
 Disallow: /api/
 Disallow: /rpm/
 Disallow: /users/
@@ -193,7 +193,7 @@ Disallow: /*.xml
 Disallow: /*.rss
 Disallow: /*.i
 Disallow: /*.embed
-Disallow: /wa/
+Disallow: /p/
 Disallow: /api/
 Disallow: /rpm/
 Disallow: /users/

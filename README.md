@@ -1,5 +1,7 @@
 # PHARAOH
 
+[ ![Codeship Status for mikechau/pharaoh](https://codeship.io/projects/919a6a40-44b9-0132-1b8a-32378b856677/status)](https://codeship.io/projects/44859)
+
 ## Getting Started
 ### Set up
 1. `git clone https://github.com/mikechau/pharaoh.git`
