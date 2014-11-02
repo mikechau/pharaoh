@@ -5,3 +5,4 @@ Guardfile
 .rspec
 .metrics
 .hound.yml
+/webpack/examples
