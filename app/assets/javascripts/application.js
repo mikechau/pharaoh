@@ -15,6 +15,7 @@
 //= require jquery-readyselector
 //= require turbolinks
 //= require nprogress
+//= require nprogress-config
 //= require nprogress-turbolinks
 //= require nprogress-ajax
 //= require bootstrap-sprockets
