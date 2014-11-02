@@ -35,6 +35,7 @@ if ENV['COVERAGE'] == 'true'
     add_filter 'vendor'
     add_filter 'spec'
     add_filter 'node_modules'
+    add_filter 'webpack/examples'
   end
 end
 
