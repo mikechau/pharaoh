@@ -10,6 +10,8 @@ Pharaoh::Application.routes.draw do
 
   root to: 'static_pages#index'
 
+  resources :styles, only: :index
+
   devise_for :users,
     controllers: {
       passwords: 'users/passwords',

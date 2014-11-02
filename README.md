@@ -4,7 +4,10 @@
 
 - [![Code Climate](https://codeclimate.com/github/mikechau/pharaoh/badges/gpa.svg)](https://codeclimate.com/github/mikechau/pharaoh)
 
-- [![Coverage Status](https://coveralls.io/repos/mikechau/pharaoh/badge.png)](https://coveralls.io/r/mikechau/pharaoh
+- [![Test Coverage](https://codeclimate.com/github/mikechau/pharaoh/badges/coverage.svg)](https://codeclimate.com/github/mikechau/pharaoh)
+
+- [![Coverage Status](https://coveralls.io/repos/mikechau/pharaoh/badge.png)](https://coveralls.io/r/mikechau/pharaoh)
+
 
 ## Getting Started
 ### Set up

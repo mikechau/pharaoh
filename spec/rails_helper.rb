@@ -2,19 +2,25 @@
 ENV['RAILS_ENV'] ||= 'test'
 
 if ENV['CI_SERVER'] == 'true'
-  require "codeclimate-test-reporter"
+  require 'codeclimate-test-reporter'
+  require 'coveralls'
+end
+
+require 'simplecov'
+
+if ENV['CI_SERVER'] == 'true'
   CodeClimate::TestReporter.configure do |config|
     config.logger.level = Logger::WARN
   end
 
-  CodeClimate::TestReporter.start
-
-  require 'coveralls'
-  Coveralls.wear!('rails')
+  SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+    Coveralls::SimpleCov::Formatter,
+    SimpleCov::Formatter::HTMLFormatter,
+    CodeClimate::TestReporter::Formatter
+  ]
 end
 
 if ENV['SIMPLECOV'] == 'true'
-  require 'simplecov'
   require 'metric_fu/logger' # workaround mf_log undefined
   require 'metric_fu/metrics/rcov/simplecov_formatter'
   # metric_fu
@@ -22,7 +28,9 @@ if ENV['SIMPLECOV'] == 'true'
     SimpleCov::Formatter::HTMLFormatter,
     SimpleCov::Formatter::MetricFu
   ]
+end
 
+if ENV['COVERAGE'] == 'true'
   SimpleCov.start 'rails' do
     add_filter 'vendor'
     add_filter 'spec'
