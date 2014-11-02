@@ -4,6 +4,7 @@
 ### Set up
 1. `git clone https://github.com/mikechau/pharaoh.git`
 2. `cd pharaoh`
+2.5 `git update-index --assume-unchanged app/assets/javascripts/rails-bundle.js`
 3. `bundle install`
 4.  Set up `application.yml` file (see example for details), set this up by doing `cp config/application.yml.example config/application.yml`
 5.  Set up `database.yml` file, set this up by doing `cp config/database.yml.example config/database.yml` and filling in the appropriate details
