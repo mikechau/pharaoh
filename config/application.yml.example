@@ -1,7 +1,7 @@
 # you only need to run rake secret 3 times and paste the result below
-SECRET_TOKEN: run rake secret
-DEVISE_SECRET: run rake secret
-PEPPER_SALT: run rake secret
+SECRET_TOKEN: d3ff5c7751504e5a357ce009d45b535aa48fb53af71c53f01cb5b14a2d30fba98f45a67cd2e45bd7f3da32b4ba55b41854b51288ac17acd8bd5dda227f11f86e
+DEVISE_SECRET: ca2752689739a781d6ba622b0f69f7a9de8c218360aac53119527336fbee7315da6728a51f8597e8e3ee3b69a4781d69d8bca7ae04045d3fa9c3dd8041b7205a
+PEPPER_SALT: 6e3f407d52eaa59089f02ef53941564f681d2596ac100dc5bfcad1f1f482c2e16ec50e03258a69090ddbf53d6f46c78af6d0c388c52d6f0d983911e3d09fecd0
 
 PROD_HOST_URL: www.pharaoh.io
 
@@ -18,3 +18,7 @@ SUBSCRIBER_NEWS_ID: sub-id
 DEV_HOST: 'localhost:3000'
 
 NEW_RELIC_KEY: new-relic-key
+COVERALLS_REPO_TOKEN: ''
+CODECLIMATE_REPO_TOKEN: ''
+SIMPLECOV: true
+COVERAGE: true

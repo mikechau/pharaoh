@@ -36,6 +36,7 @@ if ENV['COVERAGE'] == 'true'
     add_filter 'spec'
     add_filter 'node_modules'
     add_filter 'webpack/examples'
+    add_filter '*.rake'
   end
 end
 

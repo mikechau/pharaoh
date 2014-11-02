@@ -1,29 +1,29 @@
 development:
   adapter: postgresql
   encoding: utf8
-  database: pharaoh_analytics_development
+  database: pharaoh_development
   pool: 5
-  username: username
-  password: password
-  host: ip
-  port: port
+  username: uauser
+  password: uapassword
+  host: localhost
+  port: 5432
 
 test:
   adapter: postgresql
   encoding: utf8
-  database: pharaoh_analytics_test
+  database: pharaoh_test
   pool: 5
-  username: user
-  password: pass
-  host: ip
-  port: port
+  username: uauser
+  password: uapassword
+  host: localhost
+  port: 5432
 
 production:
   adapter: postgresql
   encoding: utf8
-  database: pharaoh_analytics_production
+  database: pharaoh_production
   pool: 5
-  username: user
-  password: pass
-  host: ip
-  port: port
+  username: uauser
+  password: uapassword
+  host: localhost
+  port: 5432

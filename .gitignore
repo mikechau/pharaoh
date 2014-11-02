@@ -28,7 +28,7 @@
 /log/*.log
 /tmp
 /public/assets
-#rails-bundle.js
+rails-bundle.js
 rails-bundle.js.map
 .env
 /node_modules
