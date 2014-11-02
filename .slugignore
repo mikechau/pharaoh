@@ -1,0 +1,7 @@
+/spec
+/doc
+Guardfile
+*.md
+.rspec
+.metrics
+.hound.yml

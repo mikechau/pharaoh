@@ -1,0 +1,1 @@
+  # we cant test index because we use devise authenticated routes

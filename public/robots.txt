@@ -1,0 +1,202 @@
+# See http://www.robotstxt.org/wc/norobots.html for documentation on how to use the robots.txt file
+#
+# To ban all spiders from the entire site uncomment the next two lines:
+# User-agent: *
+# Disallow: /
+
+#################################
+BLOCK ALL
+#################################
+
+# 80legs
+User-agent: 008
+Disallow: /
+
+# NerdyBot
+User-agent: NerdyBot
+Disallow: /
+
+# Panscient
+User-Agent: panscient.com
+Disallow: /
+
+# Yandex
+User-agent: Yandex
+Disallow: /
+
+# Baidu
+User-agent: Baiduspider
+Disallow: /
+
+# Baidu
+User-agent: baiduspider
+Disallow: /
+
+# Xovibot
+User-agent: XoviBot
+Disallow: /
+
+# aiHitBot
+User-agent: aiHitBot
+Disallow: /
+
+# meanpathbot
+User-agent: meanpathbot
+Disallow: /
+
+# ahrefs.com
+user-agent: AhrefsBot
+disallow: /
+
+# seoprofiler
+User-agent: spbot
+Disallow: /
+
+# ezooms
+User-agent: ezooms
+Disallow: /
+
+# sistrix
+User-agent: sistrix
+Disallow: /
+
+# proximic.com/info/spider.php
+User-agent: proximic
+Disallow: /
+
+# SMTBot
+User-agent: SMTBot
+Disallow: /
+
+# SurveyBot
+User-agent: SurveyBot
+Disallow: /
+
+User-agent: seznambot
+Disallow: /
+
+User-agent: naverbot
+Disallow: /
+
+User-agent: teoma
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Telefonica
+Disallow: /
+
+User-agent: SandDollar
+Disallow: /
+
+User-agent: dotbot
+Disallow: /
+
+User-agent: rogerbot
+Disallow: /
+
+#################################
+ALLOW SOME
+#################################
+
+User-agent: Googlebot
+Disallow: /*.json
+Disallow: /*.json-compact
+Disallow: /*.json-html
+Disallow: /*.mobile
+Disallow: /*.compact
+Disallow: /*.xml
+Disallow: /*.rss
+Disallow: /*.i
+Disallow: /*.embed
+Disallow: /wa/
+Disallow: /api/
+Disallow: /rpm/
+Disallow: /users/
+Disallow: /login
+
+User-agent: bingbot
+Disallow: /*.json
+Disallow: /*.json-compact
+Disallow: /*.json-html
+Disallow: /*.mobile
+Disallow: /*.compact
+Disallow: /*.xml
+Disallow: /*.rss
+Disallow: /*.i
+Disallow: /*.embed
+Disallow: /wa/
+Disallow: /api/
+Disallow: /rpm/
+Disallow: /users/
+Disallow: /login
+
+User-agent: msnbot
+Disallow: /*.json
+Disallow: /*.json-compact
+Disallow: /*.json-html
+Disallow: /*.mobile
+Disallow: /*.compact
+Disallow: /*.xml
+Disallow: /*.rss
+Disallow: /*.i
+Disallow: /*.embed
+Disallow: /wa/
+Disallow: /api/
+Disallow: /rpm/
+Disallow: /users/
+Disallow: /login
+
+User-agent: Slurp
+Disallow: /*.json
+Disallow: /*.json-compact
+Disallow: /*.json-html
+Disallow: /*.mobile
+Disallow: /*.compact
+Disallow: /*.xml
+Disallow: /*.rss
+Disallow: /*.i
+Disallow: /*.embed
+Disallow: /wa/
+Disallow: /api/
+Disallow: /rpm/
+Disallow: /users/
+Disallow: /login
+
+User-agent: DuckDuckBot
+Disallow: /*.json
+Disallow: /*.json-compact
+Disallow: /*.json-html
+Disallow: /*.mobile
+Disallow: /*.compact
+Disallow: /*.xml
+Disallow: /*.rss
+Disallow: /*.i
+Disallow: /*.embed
+Disallow: /wa/
+Disallow: /api/
+Disallow: /rpm/
+Disallow: /users/
+Disallow: /login
+
+#################################
+ANY
+#################################
+User-Agent: *
+Disallow: /*.json
+Disallow: /*.json-compact
+Disallow: /*.json-html
+Disallow: /*.mobile
+Disallow: /*.compact
+Disallow: /*.xml
+Disallow: /*.rss
+Disallow: /*.i
+Disallow: /*.embed
+Disallow: /wa/
+Disallow: /api/
+Disallow: /rpm/
+Disallow: /users/
+Disallow: /login
+
+Allow: /

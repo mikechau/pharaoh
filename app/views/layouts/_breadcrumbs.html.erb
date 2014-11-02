@@ -1,0 +1,11 @@
+<% if content_for?(:breadcrumbs) %>
+  <%= yield(:breadcrumbs) %>
+<% elsif breadcrumbs.present? %>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <%= render_breadcrumbs(builder: BootstrapBreadcrumbsBuilder) %>
+      </div>
+    </div>
+  </div>
+<% end %>

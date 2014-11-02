@@ -1,0 +1,110 @@
+$base-wt: #FFF;
+$shade: #F8F8F8;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+body, html{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+#wrapper:before {
+  content: '';
+  background: image-url('bg/hero.jpeg') no-repeat center 0px;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+  left:-15px;
+  right:-15px;
+  top:-15px;
+  bottom:-15px;
+}
+
+#wrapper {
+  padding-top: 60px;
+  z-index: 0;
+}
+
+.alert {
+  margin-bottom: 0px;
+}
+
+.company {
+  color: $base-wt;
+}
+
+.intro-header {
+  padding-bottom: 50px;
+  color: $shade;
+  // background: image-url('bg/hero.jpeg') no-repeat center;
+  text-align: center;
+  // background-size: cover;
+  // height: 100%;
+  // height: 100vh;
+  // z-index: 0;
+}
+
+.intro-message {
+  position: relative;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+  margin: 0;
+  font-size: 8em;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.intro-message > h3 {
+  font-size: 2em;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 767px) {
+  .intro-message {
+    padding-bottom: 15%;
+  }
+
+  .intro-message > h1 {
+    font-size: 5em;
+  }
+}
+
+.btn-login {
+  color: $base-wt;
+  background-color: transparent;
+}
+
+.btn-login:hover {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.network-name {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  padding: 15px;
+}

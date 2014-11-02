@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=320, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes"/>
+
+  <title><%= content_for?(:title) ? "#{yield(:title)} - Pharaoh" : "Pharaoh" %></title>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+
+  <%= yield(:stylesheets) %>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+  <%= yield(:javascripts) %>
+
+  <%= csrf_meta_tags %>
+
+  <%= yield(:head) %>
+</head>
+
+<body class="<%= controller_class %> <%= action_name %>">
+
+  <div id="wrap">
+    <%= render 'layouts/nav' %>
+
+    <div class="spacer"></div>
+
+    <%= render 'layouts/messages' %>
+
+    <%= yield %>
+  </div>
+
+    <%= render 'layouts/footer'%>
+
+    <%= raw EXTERNAL_JS %>
+    <%= yield(:inline_javascript) %>
+</body>
+</html>

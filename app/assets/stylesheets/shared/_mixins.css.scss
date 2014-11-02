@@ -1,0 +1,32 @@
+$st-trans:  0.3s ease;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin transition($transition-details...) {
+  -webkit-transition: $transition-details $st-trans;
+  -moz-transition:    $transition-details $st-trans;
+  -ms-transition:     $transition-details $st-trans;
+  -o-transition:      $transition-details $st-trans;
+  transition:         $transition-details $st-trans;
+}
+
+@mixin translate($x-value, $y-value) {
+  -webkit-transform:  translate($x-value, $y-value);
+  -moz-transform:     translate($x-value, $y-value);
+  -ms-transform:      translate($x-value, $y-value);
+  -o-transform:       translate($x-value, $y-value);
+  transform:          translate($x-value, $y-value);
+}
+
+@mixin transform-translate-y($y) {
+  -webkit-transform:     translateY($y);
+  -moz-transform:        translateY($y);
+  -ms-transform:         translateY($y);
+  -o-transform:          translateY($y);
+  transform:             translateY($y);
+}

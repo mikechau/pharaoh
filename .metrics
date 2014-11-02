@@ -1,0 +1,12 @@
+MetricFu::Configuration.run do |config|
+  config.configure_metric(:rcov) do |rcov|
+    rcov.coverage_file = MetricFu.run_path.join("coverage/rcov/rcov.txt")
+    rcov.enable
+    rcov.activate
+  end
+
+  config.templates_configuration do |tc|
+    tc.link_prefix = 'sublime:/'
+  end
+
+end

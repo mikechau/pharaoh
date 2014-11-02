@@ -1,0 +1,20 @@
+# you only need to run rake secret 3 times and paste the result below
+SECRET_TOKEN: run rake secret
+DEVISE_SECRET: run rake secret
+PEPPER_SALT: run rake secret
+
+PROD_HOST_URL: www.pharaoh.io
+
+# MANDRILL CONFIG
+EMAIL_SERVER_ADDRESS: smtp.mandrillapp.com
+EMAIL_USER_NAME: username
+EMAIL_API_KEY: api-key
+
+#MAILCHIMP
+SUB_EMAIL_API_KEY: api-key
+SUBSCRIBER_NEWS_ID: sub-id
+
+# DEV SETTINGS
+DEV_HOST: 'localhost:3000'
+
+NEW_RELIC_KEY: new-relic-key

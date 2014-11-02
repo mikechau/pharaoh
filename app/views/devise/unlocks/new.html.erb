@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="page-header">Resend Unlock Instructions</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="well well-lg">
+
+        <%= simple_form_for(resource,
+          as: resource_name,
+          url: unlock_path(resource_name),
+          html: {
+            method: :post,
+            class: 'form-horizontal'
+          },
+          wrapper: :horizontal_form
+        ) do |f| %>
+          <%= f.error_notification %>
+
+          <%= f.input :email,
+            :required => true,
+            :autofocus => true
+          %>
+
+          <%= f.button :submit,
+            'Resend',
+            class: 'btn btn-primary pull-right'
+          %>
+        <% end %>
+
+        <br>
+        <br>
+        <hr>
+
+        <%= render "devise/shared/links" %>
+      </div>
+    </div>
+  </div>
+</div>

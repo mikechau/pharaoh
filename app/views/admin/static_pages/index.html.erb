@@ -1,0 +1,62 @@
+<% content_for :title do %>Admin Control Panel<% end %>
+
+<div class="container">
+  <div class="text-center">
+    <%= render 'layouts/admin/header' %>
+  </div>
+
+  <div class="well well-lg">
+    <div class="row">
+      <div class="col-md-4">
+        <%= link_to(
+          admin_users_path,
+          class: 'admin-link'
+        ) do %>
+          <h1 class="text-center">
+            <%= fa_icon 'group 5x' %>
+          </h1>
+        <% end %>
+
+        <h2 class="text-center">User Management</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <hr class="well-hr">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <%= link_to(pg_hero_path, class: 'admin-link') do %>
+          <h1 class="text-center">
+            <%= fa_icon 'database 5x' %>
+          </h1>
+        <% end %>
+
+        <h2 class="text-center">Database</h2>
+      </div>
+
+      <div class="col-md-4">
+        <%= link_to(admin_server_stats_path, class: 'admin-link') do %>
+          <h1 class="text-center">
+            <%= fa_icon 'dashboard 5x' %>
+          </h1>
+        <% end %>
+
+        <h2 class="text-center">Passenger</h2>
+      </div>
+
+      <div class="col-md-4">
+        <%= link_to(processes_admin_server_stats_path, class: 'admin-link') do %>
+          <h1 class="text-center">
+            <%= fa_icon 'tasks 5x' %>
+          </h1>
+        <% end %>
+
+        <h2 class="text-center">Processes</h2>
+      </div>
+    </div>
+  </div>
+</div>

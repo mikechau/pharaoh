@@ -1,0 +1,107 @@
+html,
+body {
+  height:           100%;
+  width:            100%;
+}
+
+// Sticky Footers
+#wrap {
+  min-height:       100%;
+  height:           auto;
+  margin:           0 auto -250px;
+  padding:          0 0 250px;
+}
+
+footer {
+  letter-spacing:   0.03em;
+  color:            $base-wt;
+  background-color: $base-oj;
+  border-top:       5px solid $base-oj-line;
+  padding:          50px 0;
+
+  li {
+   list-style-type: none;
+   margin-top:      5px;
+   
+   &.soc-icons {
+     img {
+      max-height:  30px;
+     }
+   }
+  }
+
+  a {
+    color:          $base-wt;
+    @include transition(color);
+
+    &:hover {
+      color:        #EEE;
+    }
+  }
+
+  .logo {
+    margin-bottom:  15px;
+    width: 100%;
+  }
+
+  .category {
+    color:          lighten($base-oj, 30%);
+  }
+}
+
+// Navbar logo
+nav {
+  .logo {
+    max-height: 30px;
+    @include transform-translate-y(-20%);
+  }
+}
+
+@media (max-width: 325px) {
+  nav {
+    .logo {
+      max-width: 180px;
+    }
+  }
+}
+
+// Padding from Navbar
+.spacer {
+  padding-top: 55px;
+}
+
+.breadcrumb {
+  .inactive {
+    color: $inactive;
+  }
+
+  .current {
+    font-weight: 700;
+  }
+
+  // IE FIX
+  // https://stackoverflow.com/a/17868553
+  li {
+    margin-right: 1px;
+  }
+}
+
+.well-hr {
+  border-top-color: #428bca;
+}
+
+// Page Header border
+.page-header.top-border {
+  border-top: 1px solid #eeeeee;
+  padding-top: 9px;
+}
+
+.print {
+  display: none;
+}
+
+// Modal Prevent Scrolling
+// http://stackoverflow.com/questions/19060301/how-to-prevent-background-scrolling-when-bootstrap-3-modal-open-on-mobile-browse
+.modal-open {
+  position: fixed;
+}

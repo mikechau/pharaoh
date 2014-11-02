@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="page-header">Settings <small>Account</small></h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="well well-lg">
+
+        <%= simple_form_for(resource,
+          as: resource_name,
+          url: registration_path(resource_name),
+          html: {
+            method: :put
+          }
+        ) do |f| %>
+          <%= f.error_notification %>
+
+          <%= f.input :email,
+            :required => true,
+            :autofocus => true
+          %>
+
+          <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+            <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
+          <% end %>
+
+          <%= f.input :current_password,
+            hint: 'We need your current password to confirm your changes.',
+            required: true,
+            autocomplete: 'off'
+          %>
+
+          <%= f.input :password,
+            autocomplete: 'off',
+            hint: "Leave it blank if you don't want to change it.",
+            required: false
+          %>
+
+          <%= f.input :password_confirmation,
+            required: false
+          %>
+
+          <%= f.button :submit,
+            'Update',
+            class: 'btn btn-primary pull-right'
+          %>
+        <% end %>
+
+        <br>
+        <br>
+        <hr>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<%= page_entries_info pager %>
+
+<div class="pull-right">
+  <%= paginate pager,
+    theme: 'twitter-bootstrap-3',
+    pagination_class: 'admin-pagination',
+    remote: true
+  %>
+</div>

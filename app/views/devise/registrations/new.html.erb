@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="page-header">Register <small>New Account</small></h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <!-- disable -->
+      <div class="alert alert-warning" role="alert">
+        <p>
+          Registration is currently disabled.
+          <br>
+        </p>
+      </div>
+
+      <br>
+      <!-- /disable -->
+
+      <div class="well well-lg">
+      <%= simple_form_for(resource,
+        as: resource_name,
+        url: registration_path(resource_name),
+        html: { class: 'form-horizontal' },
+        wrapper: :horizontal_form
+      ) do |f| %>
+        <%= f.error_notification %>
+
+        <%= f.input :email,
+          required: true,
+          autofocus: true
+        %>
+        
+        <%= f.input :password,
+          required: true
+        %>
+        
+        <%= f.input :password_confirmation,
+          required: true
+        %>
+
+        <%= f.button :submit,
+          'Register',
+          class: 'btn btn-primary pull-right'
+        %>
+      <% end %>
+
+      <br>
+      <br>
+      <hr>
+
+      <%= render "devise/shared/links" %>
+      </div>
+    </div>
+  </div>
+</div>
