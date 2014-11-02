@@ -81,6 +81,12 @@ group :test do
   gem 'database_cleaner'
   gem 'vcr'
   gem 'webmock'
+
+  # Code assessments
+  gem 'simplecov', require: nil
+  gem 'metric_fu', require: nil
+  gem 'coveralls', require: nil
+  gem 'codeclimate-test-reporter', require: nil
 end
 
 group :test, :development do
@@ -108,11 +114,6 @@ group :test, :development do
   gem 'rack-livereload'
   gem 'guard-livereload', require: false
   gem 'guard-rspec', require: false
-
-  # Code assessments
-  gem 'simplecov', require: nil
-  gem 'metric_fu', require: nil
-  gem 'coveralls', require: false
 end
 
 group :development do
