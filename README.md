@@ -6,12 +6,15 @@
 
 - [![Test Coverage](https://codeclimate.com/github/mikechau/pharaoh/badges/coverage.svg)](https://codeclimate.com/github/mikechau/pharaoh)
 
-- [![Coverage Status](https://coveralls.io/repos/mikechau/pharaoh/badge.png)](https://coveralls.io/r/mikechau/pharaoh)
+- [![Coverage Status](https://coveralls.io/repos/mikechau/pharaoh/badge.png?branch=master)](https://coveralls.io/r/mikechau/pharaoh?branch=master)
 
 
 ## Requirements
 - Ruby 2.1.4
 - Postgres 9.3+
+- Rails 4.1+
+- NodeJS 0.10.x+
+- npm, webpack, shrinkwrap
 
 ## Getting Started
 ### Set up
@@ -23,10 +26,13 @@
 6. `rake db:create`
 7. `rake db:migrate`
 8. `rake db:seed`
+9. `npm install`
 
-```
-rails c
-```
+### Installing npm dependencies
+1. `sudo npm install -g webpack`
+2. `sudo npm install -g npm-check-updates`
+3. `sudo npm install -g npm-shrinkwrap`
+
 ### Setting up your test environment
 1. `RAILS_ENV=test rake db:create`
 2. `RAILS_ENV=test rake db:migrate`
@@ -34,9 +40,14 @@ rails c
 ### Starting the server
 
 1. `guard`
-2. `foreman start`
+2. `foreman start` - Requires NodeJS, otherwise just do `rails s`.
 
----
+### Updating Node Dependencies
+1. `rm -rf node_modules`
+2. `npm-check-updates -u`
+3. `npm install`
+4. `npm shrinkwrap`
+
 ## GIT WORKFLOW
 #### Initial Setup
 0. Configure your git with `git config --global push.default simple` so you only push your current branch!
@@ -58,5 +69,14 @@ rails c
 1. Name feature branches as: `feature/name`
 2. Ensure tests pass before pushing
 
-#### Vagrant
+## Vagrant
 - https://github.com/uberarchitects/vagrant-boxes
+
+## Guides Referenced
+- [ Fast Rich Client Rails Development With Webpack and the ES6 Transpiler](http://www.railsonmaui.com/blog/2014/10/02/integrating-webpack-and-the-es6-transpiler-into-an-existing-rails-project/)
+- [React Webpack Rails Tutorial Repo](https://github.com/justin808/react-webpack-rails-tutorial)
+
+### Special Thanks
+- [Justin Gordan](https://github.com/justin808)
+
+License MIT. 2014.

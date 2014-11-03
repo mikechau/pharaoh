@@ -5,7 +5,7 @@ var path = require('path');
 var railsBundleFile = 'rails-bundle.js';
 var railsJsAssetsDir = '../app/assets/javascripts';
 var railsBundleMapFile = railsBundleFile + '.map';
-var railsBundleMapRelativePath = '../../../public/assets/' + railsBundleMapFile;
+// var railsBundleMapRelativePath = '../../../public/assets/' + railsBundleMapFile;
 
 module.exports = {
   context: __dirname,
