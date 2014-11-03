@@ -9,6 +9,10 @@
 - [![Coverage Status](https://coveralls.io/repos/mikechau/pharaoh/badge.png)](https://coveralls.io/r/mikechau/pharaoh)
 
 
+## Requirements
+- Ruby 2.1.4
+- Postgres 9.3+
+
 ## Getting Started
 ### Set up
 1. `git clone https://github.com/mikechau/pharaoh.git`
@@ -53,3 +57,6 @@ rails c
 #### NOTES
 1. Name feature branches as: `feature/name`
 2. Ensure tests pass before pushing
+
+#### Vagrant
+- https://github.com/uberarchitects/vagrant-boxes
